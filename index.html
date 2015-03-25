@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Numbers Speak</title>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="./number.js"></script>
+	Please enter an integer (whole numbers, no decimals or fractions) between 0 and 2501.<br>
+
+	<input></input>
+	<p></p>
+
+	<script>
+	$('input').on('keyup', function() {
+		var num = $('input').val()
+		if (num !== "") {
+			$('p').text(S.speakNum(num))
+		} else {
+			$('p').text("")
+		}
+		
+	})
+	</script>
+
+	
+
+
+
+</body>
+</html>
